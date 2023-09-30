@@ -56,7 +56,7 @@ class AmitySLEUIKit {
     } else {
       throw "REGION is not specify Please check .env file";
     }
-
+    debugPrint("Connecting with API Key: $apikey on endpoint $amityEndpoint");
     await AmityCoreClient.setup(
         option:
             AmityCoreClientOption(apiKey: apikey, httpEndpoint: amityEndpoint!),
