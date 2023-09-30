@@ -337,7 +337,7 @@ class _PostWidgetState extends State<PostWidget>
             onRefresh();
             break;
           case 'Delete Post':
-            deleteDialog.open(
+            setState(() => deleteDialog.open(
               context: context,
               title: 'Delete Post',
               message: AppString.messageConfrimDelete,
@@ -351,7 +351,7 @@ class _PostWidgetState extends State<PostWidget>
                 onDeletePost();
                 deleteDialog.close();
               },
-            );
+            ));
             break;
           default:
         }

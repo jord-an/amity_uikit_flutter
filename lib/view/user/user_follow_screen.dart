@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../amity_uikit_beta_service.dart';
-import '../../viewmodel/configuration_viewmodel.dart';
 import '../../viewmodel/follower_following_viewmodel.dart';
 import '../../viewmodel/user_feed_viewmodel.dart';
 import 'user_follower_component.dart';
